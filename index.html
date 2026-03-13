@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfólio Front-End</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="particles"></div>
+
+    <section id="hero">
+        <div class="hero-text">
+            <p class="subtitle">PORTFÓLIO DE DEV <span>F R O N T - E N D</span></p>
+
+            <h1>
+                MINHA <br>
+                <span>LANDING PAGE</span>
+            </h1>
+
+            <button onclick="scrollToSection('sobre')">
+                CONHEÇA
+            </button>
+        </div>
+
+        <div class="circles">
+            <div class="circle" data-speed="2"></div>
+            <div class="circle" data-speed="4"></div>
+            <div class="circle" data-speed="6"></div>
+            <div class="circle" data-speed="8"></div>
+        </div>
+
+    </section>
+
+    <section id="sobre">
+        <h2>Quem sou eu?</h2>
+
+        <div class="about-container">
+            <img src="./imagens/WhatsApp Image 2026-03-13 at 16.15.45.jpeg" alt="Minha foto">
+            <p>Meu nome é Rafael Benevides Sobral, tenho 17 anos e sou universitário, estou no primeiro semestre de Ciências da Computação na Universidade de Fortaleza (UNIFOR). Além disso, possuo uma formação como Desenvolvedor Full-Stack na Digital College, tenho total ciência e habilidade na manipulação de conteúdos como: Javascript, CSS, HTML e React, conteúdos esses que foram utilizados para a criação dessa página.</p>
+        </div>
+
+        <button onclick="scrollToSection('projetos')">
+            Prosseguir
+        </button>
+    </section>
+
+    <section id="projetos">
+        <h2>Meus projetos mais recentes</h2>
+
+        <div class="projects">
+            <div class="card">Projeto 1</div>
+            <div class="card">Projeto 2</div>
+            <div class="card">Projeto 3</div>
+        </div>
+
+        <button onclick="scrollToSection('contato')">
+            Prosseguir
+        </button>
+    </section>
+
+    <section id="contato">
+        <h2>Quer conhecer mais?</h2>
+
+        <div class="links">
+            <a href="#">Linkedin</a>
+            <a href="#">Github</a>
+            <a href="#">Instagram</a>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
