@@ -7,70 +7,163 @@
     <title>Portfólio Front-End</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
     <div id="particles"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"></div>
 
-    <section id="hero">
-        <div class="hero-text">
-            <p class="subtitle">PORTFÓLIO DE DEV <span>F R O N T - E N D</span></p>
+    <main class="page-shell">
+        <section id="hero">
+            <div class="hero-text">
+                <p class="subtitle">PORTFÓLIO DE DEV <span>F R O N T - E N D</span></p>
 
-            <h1>
-                MINHA <br>
-                <span>LANDING PAGE</span>
-            </h1>
+                <h1>
+                    MINHA <br>
+                    <span>LANDING PAGE</span>
+                </h1>
 
-            <button onclick="scrollToSection('sobre')">
-                CONHEÇA
+                <p class="hero-description">
+                    Desenvolvo interfaces modernas com foco em experiência visual, animações, responsividade e soluções funcionais também no back-end.
+                </p>
+
+                <div class="hero-tags" aria-label="Competências principais">
+                    <span>UI Motion</span>
+                    <span>Front-End</span>
+                    <span>Back-End</span>
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>MySQL</span>
+                </div>
+
+                <button onclick="scrollToSection('sobre')">
+                    CONHEÇA
+                </button>
+            </div>
+
+            <div class="circles" aria-hidden="true">
+                <div class="circle" data-speed="2"></div>
+                <div class="circle" data-speed="4"></div>
+                <div class="circle" data-speed="6"></div>
+                <div class="circle" data-speed="8"></div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Quem sou eu?</h2>
+
+            <div class="about-container">
+                <img src="./imagens/rafael.png" alt="Minha foto">
+                <div class="about-content">
+                    <p>Meu nome é Rafael Benevides Sobral, tenho 17 anos e sou universitário, estou no primeiro semestre de Ciências da Computação na Universidade de Fortaleza (UNIFOR). Além disso, possuo uma formação como Desenvolvedor Full-Stack na Digital College, tenho total ciência e habilidade na manipulação de conteúdos como: Javascript, CSS, HTML e React, conteúdos esses que foram utilizados para a criação dessa página.</p>
+
+                    <div class="info-strip">
+                        <div class="info-card">
+                            <span class="info-label">Formação</span>
+                            <strong>Ciências da Computação</strong>
+                            <small>UNIFOR</small>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-label">Capacitação</span>
+                            <strong>Desenvolvedor Full-Stack</strong>
+                            <small>Digital College</small>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-label">Foco</span>
+                            <strong>Interfaces + APIs</strong>
+                            <small>Front e Back</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="scrollToSection('competencias')">
+                VER COMPETÊNCIAS
             </button>
-        </div>
+        </section>
 
-        <div class="circles">
-            <div class="circle" data-speed="2"></div>
-            <div class="circle" data-speed="4"></div>
-            <div class="circle" data-speed="6"></div>
-            <div class="circle" data-speed="8"></div>
-        </div>
+        <section id="competencias">
+            <h2>Competências e habilidades</h2>
 
-    </section>
+            <div class="skills-grid">
+                <article class="skill-panel">
+                    <p class="panel-kicker">Front-End</p>
+                    <h3>Construção de interfaces fortes e responsivas</h3>
+                    <ul class="skill-list">
+                        <li>HTML semântico e estruturação de páginas</li>
+                        <li>CSS moderno, animações e layouts responsivos</li>
+                        <li>JavaScript para interatividade e lógica</li>
+                        <li>React para componentes e páginas dinâmicas</li>
+                        <li>Experiência visual, motion e microinterações</li>
+                    </ul>
+                </article>
 
-    <section id="sobre">
-        <h2>Quem sou eu?</h2>
+                <article class="skill-panel">
+                    <p class="panel-kicker">Back-End</p>
+                    <h3>Criação de bases funcionais com APIs e banco de dados</h3>
+                    <ul class="skill-list">
+                        <li>Node.js para ambiente de execução no servidor</li>
+                        <li>Express para construção de rotas e APIs</li>
+                        <li>MySQL para armazenamento e organização de dados</li>
+                        <li>Lógica de CRUD e integração entre front e back</li>
+                        <li>Estruturação de aplicações com foco em consistência</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
-        <div class="about-container">
-            <img src="./imagens/WhatsApp Image 2026-03-13 at 16.15.45.jpeg" alt="Minha foto">
-            <p>Meu nome é Rafael Benevides Sobral, tenho 17 anos e sou universitário, estou no primeiro semestre de Ciências da Computação na Universidade de Fortaleza (UNIFOR). Além disso, possuo uma formação como Desenvolvedor Full-Stack na Digital College, tenho total ciência e habilidade na manipulação de conteúdos como: Javascript, CSS, HTML e React, conteúdos esses que foram utilizados para a criação dessa página.</p>
-        </div>
+        <section id="projetos">
+            <h2>Meus projetos mais recentes</h2>
 
-        <button onclick="scrollToSection('projetos')">
-            Prosseguir
-        </button>
-    </section>
+            <div class="projects">
+                <div class="card">
+                    <span class="card-title">Landing pages criativas</span>
+                    <p>Interfaces com foco em impacto visual, movimento e identidade própria.</p>
+                </div>
+                <div class="card">
+                    <span class="card-title">APIs com Node.js</span>
+                    <p>Estruturação de serviços para conectar dados, regras e funcionalidades.</p>
+                </div>
+                <div class="card">
+                    <span class="card-title">Banco de dados MySQL</span>
+                    <p>Organização de informações com pensamento lógico e boa modelagem.</p>
+                </div>
+            </div>
 
-    <section id="projetos">
-        <h2>Meus projetos mais recentes</h2>
+            <button onclick="scrollToSection('stack')">
+                VER STACK
+            </button>
+        </section>
 
-        <div class="projects">
-            <div class="card">Projeto 1</div>
-            <div class="card">Projeto 2</div>
-            <div class="card">Projeto 3</div>
-        </div>
+        <section id="stack">
+            <h2>Tecnologias que uso</h2>
 
-        <button onclick="scrollToSection('contato')">
-            Prosseguir
-        </button>
-    </section>
+            <div class="stack-wall">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MySQL</span>
+                <span>Responsividade</span>
+                <span>Design Systems</span>
+                <span>APIs REST</span>
+                <span>CRUD</span>
+                <span>Animações</span>
+            </div>
+        </section>
 
-    <section id="contato">
-        <h2>Quer conhecer mais?</h2>
+        <section id="contato">
+            <h2>Quer conhecer mais?</h2>
 
-        <div class="links">
-            <a href="https://www.linkedin.com/in/rafael-benevides-248b263a7/">Linkedin</a>
-            <a href="https://github.com/RafaelBenevidesDev">Github</a>
-            <a href="https://www.instagram.com/rafabenevides._/">Instagram</a>
-        </div>
-    </section>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/rafael-benevides-248b263a7/">Linkedin</a>
+                <a href="https://github.com/RafaelBenevidesDev">Github</a>
+                <a href="https://www.instagram.com/rafabenevides._/">Instagram</a>
+            </div>
+        </section>
+    </main>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
